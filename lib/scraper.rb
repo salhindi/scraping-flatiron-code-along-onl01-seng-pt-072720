@@ -28,8 +28,12 @@ class Scraper
   end
   
   def make_courses
-    
+    #responsible for instantiating Course objects and giving each course object the correct title/schedule/description attr. that we scraped from the page.
+  end
   
+  def print_courses
+    #calls on .make_courses && iterates over all courses and puts them outs
+  end
 end
 
 
