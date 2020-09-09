@@ -22,9 +22,9 @@ class Scraper
     
     doc.css(".post").each do |post|
       course= Course.new 
-    course.title = doc.css(."post").first.ccs("h2")
-    course.schedule = doc.css(".post").first.css(".date").text
-    course.description= doc.css(".post").first.css("p").text
+    course.title = post.ccs("h2")
+    course.schedule = post.css(".date").text
+    course.description= post.css("p").text
     #responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page
   end
   Scraper.new.get_page
