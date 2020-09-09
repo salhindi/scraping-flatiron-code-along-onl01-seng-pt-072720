@@ -31,6 +31,7 @@ class Scraper
   def get_courses
     self.get_page.css(".post")
   end
+end
   #   # using a CSS selector to grab all of the HTML elements that contain a course. 
     
   #   #return value should = collection of Nokogiri XML elements
