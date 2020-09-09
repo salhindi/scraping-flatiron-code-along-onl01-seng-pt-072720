@@ -21,6 +21,14 @@ class Scraper
   end
   
   def get_courses
+    # using a CSS selector to grab all of the HTML elements that contain a course. 
+    
+    #return value should = collection of Nokogiri XML elements
+     #-each describes course offering (examine page with element inspector)
+  end
+  
+  def make_courses
+    
   
 end
 
