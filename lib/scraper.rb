@@ -27,7 +27,7 @@ class Scraper
     # course.description= post.css("p").text
   end
     #responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page
-  end
+
 end
   Scraper.new.get_page
   
