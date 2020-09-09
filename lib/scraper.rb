@@ -28,10 +28,9 @@ class Scraper
   end
     #responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page
 
-end
-  Scraper.new.get_page
-  
-  # def get_courses
+  def get_courses
+    self.get_page.css(".post")
+  end
   #   # using a CSS selector to grab all of the HTML elements that contain a course. 
     
   #   #return value should = collection of Nokogiri XML elements
