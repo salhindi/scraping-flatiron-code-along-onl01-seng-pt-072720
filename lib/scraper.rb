@@ -28,6 +28,7 @@ class Scraper
   end
     #responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page
   end
+end
   Scraper.new.get_page
   
   # def get_courses
@@ -41,7 +42,6 @@ class Scraper
   #   #responsible for instantiating Course objects and giving each course object the correct title/schedule/description attr. that we scraped from the page.
   # end
 
-end
 
 
 
